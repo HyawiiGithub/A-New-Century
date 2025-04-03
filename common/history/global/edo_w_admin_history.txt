@@ -1,0 +1,490 @@
+﻿GLOBAL = {
+	every_state = {
+		limit = {
+			owner = {
+				has_technology_researched = urbanization
+			}
+		}
+		create_building={
+			building="building_post_office"
+			level=1 
+			reserves=1
+			activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+		}
+	}
+	every_country = {
+		limit = {
+			has_technology_researched = centralization
+		}
+		activate_production_method = {
+			building_type = building_government_administration
+			production_method = pm_mail_comms
+		}
+	}
+	every_state = {
+		limit = {
+			has_building = building_government_administration
+			owner = {
+				has_technology_researched = urbanization
+			}
+		}
+		set_variable = {
+			name  = total_adm_PM
+			value = 0
+		}
+		change_variable = {
+			name = total_adm_PM
+			add  = b:building_government_administration.level
+		}
+				if = {
+			limit = { var:total_adm_PM = 1   }
+			create_building={
+				building="building_post_office"
+				level=1 
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 2   }
+			create_building={
+				building="building_post_office"
+				level=2 
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 3   }
+			create_building={
+				building="building_post_office"
+				level=3 
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 4   }
+			create_building={
+				building="building_post_office"
+				level=4 
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 5   }
+			create_building={
+				building="building_post_office"
+				level=5 
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 6   }
+			create_building={
+				building="building_post_office"
+				level=6 
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 7   }
+			create_building={
+				building="building_post_office"
+				level=7 
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 8   }
+			create_building={
+				building="building_post_office"
+				level=8 
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 9   }
+			create_building={
+				building="building_post_office"
+				level=9 
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 10  }
+			create_building={
+				building="building_post_office"
+				level=10
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 11  }
+			create_building={
+				building="building_post_office"
+				level=11
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 12  }
+			create_building={
+				building="building_post_office"
+				level=12
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 13  }
+			create_building={
+				building="building_post_office"
+				level=13
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 14  }
+			create_building={
+				building="building_post_office"
+				level=14
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 15  }
+			create_building={
+				building="building_post_office"
+				level=15
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 16  }
+			create_building={
+				building="building_post_office"
+				level=16
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 17  }
+			create_building={
+				building="building_post_office"
+				level=17
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 18  }
+			create_building={
+				building="building_post_office"
+				level=18
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 19  }
+			create_building={
+				building="building_post_office"
+				level=19
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 20  }
+			create_building={
+				building="building_post_office"
+				level=20
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 21  }
+			create_building={
+				building="building_post_office"
+				level=21
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 22  }
+			create_building={
+				building="building_post_office"
+				level=22
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 23  }
+			create_building={
+				building="building_post_office"
+				level=23
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 24  }
+			create_building={
+				building="building_post_office"
+				level=24
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 25  }
+			create_building={
+				building="building_post_office"
+				level=25
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 26  }
+			create_building={
+				building="building_post_office"
+				level=26
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 27  }
+			create_building={
+				building="building_post_office"
+				level=27
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 28  }
+			create_building={
+				building="building_post_office"
+				level=28
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 29  }
+			create_building={
+				building="building_post_office"
+				level=29
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 30  }
+			create_building={
+				building="building_post_office"
+				level=30
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 31  }
+			create_building={
+				building="building_post_office"
+				level=31
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 32  }
+			create_building={
+				building="building_post_office"
+				level=32
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 33  }
+			create_building={
+				building="building_post_office"
+				level=33
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 34  }
+			create_building={
+				building="building_post_office"
+				level=34
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 35  }
+			create_building={
+				building="building_post_office"
+				level=35
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 36  }
+			create_building={
+				building="building_post_office"
+				level=36
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 37  }
+			create_building={
+				building="building_post_office"
+				level=37
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 38  }
+			create_building={
+				building="building_post_office"
+				level=38
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 39  }
+			create_building={
+				building="building_post_office"
+				level=39
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 40  }
+			create_building={
+				building="building_post_office"
+				level=40
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 41  }
+			create_building={
+				building="building_post_office"
+				level=41
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 42  }
+			create_building={
+				building="building_post_office"
+				level=42
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 43  }
+			create_building={
+				building="building_post_office"
+				level=43
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 44  }
+			create_building={
+				building="building_post_office"
+				level=44
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 45  }
+			create_building={
+				building="building_post_office"
+				level=45
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 46  }
+			create_building={
+				building="building_post_office"
+				level=46
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 47  }
+			create_building={
+				building="building_post_office"
+				level=47
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 48  }
+			create_building={
+				building="building_post_office"
+				level=48
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 49  }
+			create_building={
+				building="building_post_office"
+				level=49
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+		if = {
+			limit = { var:total_adm_PM = 50  }
+			create_building={
+				building="building_post_office"
+				level=50
+				reserves=1
+				activate_production_methods={ "pm_foot_post" "pm_no_mail" }
+			}
+		}
+	}
+}

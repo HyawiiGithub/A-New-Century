@@ -1,0 +1,16 @@
+﻿DIPLOMACY = {
+	c:RSF = {
+		create_truce = {
+			country = c:UKR
+			months = 2
+		}
+	}	
+}
+DIPLOMACY = {
+	c:AZB = {
+		create_truce = {
+			country = c:ARM
+			months = 10
+		}
+	}	
+}

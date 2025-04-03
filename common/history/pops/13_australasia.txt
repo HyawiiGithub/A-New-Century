@@ -1,0 +1,133 @@
+﻿POPS = {
+	s:STATE_NEW_SOUTH_WALES = {
+		region_state:AUZ = {
+			create_pop = {
+				culture = aborigine
+				size = 12354
+			}
+			create_pop = {
+				culture = australian
+				size = 698041
+			}
+			create_pop = {
+				culture = melanesian
+				size = 21608
+			}
+		}
+	}
+	s:STATE_VICTORIA = {
+		region_state:AUZ = {
+			create_pop = {
+				culture = aborigine
+				size = 13111
+			}
+			create_pop = {
+				culture = melanesian
+				size = 13111
+			}
+			create_pop = {
+				culture = australian
+				size = 502014
+			}
+			create_pop = {
+				culture = japanese
+				size = 2368
+			}
+		}
+	}
+
+	s:STATE_TASMANIA = {
+		region_state:AUZ = {
+			create_pop = {
+				culture = aborigine
+				size = 3265
+			}
+			create_pop = {
+				culture = australian
+				size = 46051
+			}
+		}
+	}
+	s:STATE_QUEENSLAND = {
+		region_state:AUZ = {
+			create_pop = {
+				culture = aborigine
+				size = 26840
+			}
+			create_pop = {
+				culture = australian
+				size = 410652
+			}
+		}
+	}
+	s:STATE_SOUTH_AUSTRALIA = {
+		region_state:AUZ = {
+			create_pop = {
+				culture = australian
+				size = 143251
+			}		
+			create_pop = {
+				culture = aborigine
+				size = 10231
+			}
+		}
+	}
+	s:STATE_WESTERN_AUSTRALIA = {
+		region_state:AUZ = {
+			create_pop = {
+				culture = aborigine
+				size = 32358
+			}
+			create_pop = {
+				culture = australian
+				size = 196652
+			}
+		}
+	}
+	s:STATE_NORTHERN_TERRITORY = {
+		region_state:AUZ = {
+			create_pop = {
+				culture = aborigine
+				size = 10351
+			}
+			create_pop = {
+				culture = australian
+				size = 13317
+			}
+		}
+	}
+	s:STATE_NORTH_ISLAND = {
+		region_state:NZL = {
+			create_pop = {
+				culture = kiwi
+				size = 267510
+			}
+			create_pop = {
+				culture = maori
+				religion = protestant
+				size = 64870
+			}
+			create_pop = {
+				culture = maori
+				size = 354
+			}
+		}
+	}
+	s:STATE_SOUTH_ISLAND = {
+		region_state:NZL = {
+			create_pop = {
+				culture = kiwi
+				size = 91502
+			}
+			create_pop = {
+				culture = maori
+				religion = protestant
+				size = 6351
+			}
+			create_pop = {
+				culture = maori
+				size = 1865
+			}
+		}
+	}
+}
