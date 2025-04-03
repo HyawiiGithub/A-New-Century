@@ -1,0 +1,37 @@
+very_high_births = {
+    icon  = "gfx/interface/icons/event_icons/event_map.dds"
+    state_birth_rate_mult = 1.5
+    state_mortality_mult = 0.5
+}
+
+high_births = {
+    icon  = "gfx/interface/icons/event_icons/event_map.dds"
+    state_birth_rate_mult = 1.25
+    state_mortality_mult = 0.4
+}
+bad_harvest = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
+    state_mortality_mult = 0.05
+    state_turmoil_effects_mult = 0.25
+    state_mortality_turmoil_mult = 0.15
+    state_standard_of_living_add = -1
+    building_group_bg_ranching_throughput_add = -0.25
+    building_group_bg_agriculture_throughput_add = -0.25
+}
+good_harvest = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+    state_mortality_mult = -0.05
+    state_turmoil_effects_mult = -0.25
+    state_mortality_turmoil_mult = -0.15
+    state_standard_of_living_add = 1
+    building_group_bg_ranching_throughput_add = 0.25
+    building_group_bg_agriculture_throughput_add = 0.25
+}
+minting_ai_bonus = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+    country_minting_mult = 1   
+}
+minting_ai_bonus_2 = {
+    icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
+    country_minting_mult = 7.5 
+}

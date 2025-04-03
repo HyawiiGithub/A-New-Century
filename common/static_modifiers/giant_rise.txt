@@ -1,0 +1,30 @@
+# EVENTS 
+cmp_giant_rise = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+    country_influence_mult = 0.1
+	state_turmoil_effects_mult = -0.05
+	state_bureaucracy_mult = -0.05
+    state_construction_mult = 0.1
+}
+cmp_the_renaissance_of_mining_industry = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+    building_coal_mine_throughput_add = 0.25
+	building_iron_mine_throughput_add = 0.25
+}
+cmp_automobile_stonks = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+    building_motor_industry_throughput_add = 0.33
+    country_government_dividends_efficiency_add = 0.1
+    building_group_bg_construction_laborers_mortality_mult = -0.4
+ #   state_migration_pull_add = 10
+	state_migration_pull_mult = 0.25
+ #	state_birth_rate_mult = 0.1  
+    country_prestige_add = 10
+    state_pop_qualifications_mult = 0.25
+	state_infrastructure_mult = 0.15
+}
+cmp_enactment_bonus = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+    country_law_enactment_success_add = 0.2  
+    country_law_enactment_time_mult = -0.25 
+}

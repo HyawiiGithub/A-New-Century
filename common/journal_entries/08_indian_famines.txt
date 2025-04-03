@@ -1,0 +1,4 @@
+08_indian_famines = {
+}
+
+# this exist to prevent DLC compability issues with this journal entry so i need to overwrite it to fix the thousands of errors it's generating    -the developer

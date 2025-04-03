@@ -1,0 +1,12 @@
+﻿comet_sighting = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_weekly_innovation_add = 10
+}
+comet_sighting_intelligentsia = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_weekly_innovation_add = 15
+}
+comet_sighting_devout = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_weekly_innovation_add = 5
+}

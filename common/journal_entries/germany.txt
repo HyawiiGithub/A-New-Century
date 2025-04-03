@@ -1,0 +1,167 @@
+je_the_olds_days = {
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+    
+    is_shown_when_inactive = {
+        exists = c:GER
+        THIS = c:GER
+    }
+    possible = {
+        NOT = { has_variable = picked_fascism }
+    }
+    immediate = {
+    }
+    complete = {
+    has_variable = picked_fascism        
+    }
+    on_complete = {
+        activate_law = law_type:law_mass_conscription
+        activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_laissez_faire
+		activate_law = law_type:law_outlawed_dissent
+		activate_law = law_type:law_ethnostate
+        activate_law = law_type:law_debt_slavery
+        interest_group_ig_officers_pol_str_mult = 2.5
+    }
+
+    invalid = {
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+
+
+je_future_path = {
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+    
+    is_shown_when_inactive = {
+        exists = c:GER
+        THIS = c:GER
+    }
+    possible = {
+    }
+    immediate = {
+    }
+    complete = {       
+    }
+    on_complete = {
+    }
+
+    invalid = {
+    }
+
+    scripted_button = je_future_path_test
+    scripted_button = je_future_path_anschluss
+    scripted_button = je_future_path_french
+      
+        weight = 1000
+        should_be_pinned_by_default = yes
+}
+je_the_austrian_question = {
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+    
+    is_shown_when_inactive = {
+        exists = c:GER
+        THIS = c:GER
+    }
+    possible = {
+    }
+    immediate = {
+    }
+    complete = {
+        has_variable = subjugate_austria_clicked       
+    }
+    on_complete = {
+        annex = c:OST
+        change_infamy = 60
+        c:OST.relations.root >= 50
+        }
+
+    invalid = {
+    }
+    
+        weight = 1000
+        should_be_pinned_by_default = yes
+}
+je_the_germans_in_poland = {
+        icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+    
+    is_shown_when_inactive = {
+        exists = c:GER
+        THIS = c:GER
+    }
+    possible = {
+    }
+    immediate = {
+    }
+    complete = {
+        random_country = {
+        	limit = {
+	        	NOT = { this = ROOT }
+	        	country_has_primary_culture = cu:polish #Not made to work
+        relations:root >= -50
+            }
+        }
+        has_law = law_type:law_ethnostate
+        has_law = law_type:law_closed_borders
+        has_law = law_type:law_presidential_republic     
+    }
+    on_complete = {
+        s:STATE_SILESIA = {
+            add_claim = ROOT 
+        }
+        s:STATE_LUBUSZ = {
+            add_claim = ROOT 
+        }
+        s:STATE_POMERANIA = {
+            add_claim = ROOT 
+        }
+    }
+    invalid = {
+    }
+    
+        weight = 1000
+        should_be_pinned_by_default = yes
+}
+je_reclaim_french_territory = {
+        icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+    
+    is_shown_when_inactive = {
+        exists = c:GER
+        THIS = c:GER
+    }
+    possible = {
+    }
+    immediate = {
+    }
+    complete = {
+        custom_tooltip = {
+            text = french_button_clicked
+        has_variable = french_button_clicked
+        }
+    }
+    on_complete = {
+         s:STATE_ALSACE_LORRAINE = {
+            add_claim = ROOT 
+        }
+        trigger_event = { 
+            id = the_german_ultimatum.2
+        }
+    }
+    invalid = {
+    }
+    
+        weight = 1000
+        should_be_pinned_by_default = yes
+}

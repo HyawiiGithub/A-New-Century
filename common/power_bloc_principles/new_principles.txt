@@ -1,0 +1,21 @@
+principle_internal_trade_3 = {
+	icon = "gfx/interface/icons/principles_icons/internal_trade.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_3.dds"
+
+	member_modifier = {
+		# Modifiers from previous level(s)
+		country_company_throughput_bonus_add = 0.1
+		country_convoy_contribution_to_market_owner_add = 0.4
+		tariff_import_outside_power_bloc_mult = 0.15
+		tariff_export_outside_power_bloc_mult = 0.15
+		state_infrastructure_mult = 0.25
+		power_bloc_cohesion_add = 60
+		
+		# Cheaper port connections
+		country_port_connection_cost_mult = -0.25
+	}
+	
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}

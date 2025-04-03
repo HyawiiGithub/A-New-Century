@@ -1,0 +1,8 @@
+on_yearly_events = {	
+	random_events = {
+		chance_of_no_event = 50
+
+        30 = bad_harvests.1
+        20 = bad_harvests.2
+    }
+}

@@ -1,0 +1,53 @@
+Spanish_Reclamation_Of_The_Lowlands = {
+    title = "Spanish Reclamation of The Lowlands"
+    desc = "Spain will become great again by bringing back our old empire!"
+    group = je_group_historical_content
+
+    exists = c:SPA
+    THIS = c:SPA
+
+    is_shown_when_inactive = {
+        exists = c:SPA
+    }
+    possible = {
+        NOT = {
+            has_war_with = c:BEL
+            is_ai = yes
+        }
+        exists = c:SPA
+        THIS = c:SPA
+    }
+
+    immediate = {
+    
+    }
+
+    complete = {
+        sol_ranking <= 20
+        gdp_per_capita_ranking <= 20
+        literacy_rate >= 0.5
+        country_has_voting_franchise = yes
+        has_law = law_type:law_monarchy
+        NOT = { has_law = law_type:law_traditionalism } 
+        custom_tooltip = {
+            text = spanish_tt    
+        has_variable = Spanish_Reclamation_Of_The_Lowlands
+        }
+        
+        
+    }
+    scripted_button = je_the_reclamation_progress
+    scripted_progress_bar = Spanish_Reclamation_Of_The_Lowlands_progress_bar
+
+   
+
+
+
+on_complete = {
+start_enactment = law_type:law_autocracy
+annex_with_incorporation = c:BEL
+
+}
+
+should_be_pinned_by_default = yes
+}

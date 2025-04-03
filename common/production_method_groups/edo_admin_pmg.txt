@@ -1,0 +1,213 @@
+﻿###admin building
+
+pmg_base_building_government_administration = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_simple_organization
+		pm_horizontal_drawer_cabinets
+		pm_vertical_filing_cabinets
+		pm_modern_forms
+	}
+}
+
+pmg_admin_communication = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_no_communication
+		pm_mail_comms
+		pm_telegraph_comms
+		pm_mass_telegraph
+		pm_phones_comms
+	}
+}
+
+pmg_admin_machinery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_no_typewritter
+		pm_typewritter_intro
+		pm_mass_typewritter_use
+		pm_punching_card_census
+		pm_punching_card_accounting
+	}
+}
+
+###cable factory
+
+pmg_cable = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_cable_base
+		pm_stranded_wire
+		pm_braided_wire
+	}
+}
+
+pmg_cable_insulation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_cable_insulation
+		pm_fabric_insulation
+		pm_rubber_insulation
+	}
+}
+
+pmg_lightbulb = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_lightbulbs
+		pm_manual_lightbulbs
+		pm_glass_ribon
+	}
+}
+
+### bicycle factory
+
+pmg_bicycle = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_penny_farthing
+		pm_safety_bicycle
+		pm_roadster_bicycle
+	}
+}
+
+pmg_bicycle_wheel = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_iron_wheels
+		pm_solid_rubber_tires
+		pm_pneumatic_tires
+	}
+}
+
+### Comm Factory
+
+pmg_telegraphs = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_morse_telegraph
+		pm_teleprinter
+		pm_harmonic_telegraph
+	}
+}
+
+pmg_telephones_category = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_phone
+		pm_carbon_phone
+		pm_candlestick_phone
+		pm_handset_phone
+	}
+}
+pmg_radios_category = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_radio
+		pm_crystal_set_radio
+		pm_superhet_radio
+	}
+}
+
+### Typewritter Factory
+
+pmg_typewritter = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_index_typewritter
+		pm_shift_key_typewritter
+		pm_electric_typewritter
+	}
+}
+
+pmg_punching_card_machine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_punch_card
+		pm_tabulating_machine
+		pm_accounting_machine
+	}
+}
+
+### Motor Factory
+
+pmg_turbine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_turbines
+		pm_dynamos
+		pm_steam_turbines
+		pm_gas_turbines
+	}
+}
+
+### Car Factory
+
+pmg_car_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_horseless_carriage
+		pm_touring_car
+		pm_electric_car
+		pm_sedan_car
+	}
+}
+
+pmg_car_wheel = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_iron_wheels
+		pm_rubber_tire_car
+		pm_pneumatic_tires_car
+	}
+}
+
+### Post Office
+
+pmg_mail = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_foot_post
+		pm_post_bicycle
+		pm_post_car
+	}
+}
+
+pmg_mail2 = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_mail
+		pm_boat_mail
+		pm_train_mail
+		pm_steam_mail
+		pm_air_mail
+	}
+}
+
+###copper
+
+pmg_mining_equipment_building_copper_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_picks_and_shovels_building_copper_mine
+		pm_atmospheric_engine_pump_building_copper_mine
+		pm_condensing_engine_pump_building_copper_mine
+		pm_diesel_pump_building_copper_mine
+	}
+}
+
+pmg_explosives_building_copper_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_explosives
+		pm_nitroglycerin_building_copper_mine
+		pm_dynamite_building_copper_mine
+	}
+}

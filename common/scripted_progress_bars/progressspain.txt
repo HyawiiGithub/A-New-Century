@@ -1,0 +1,46 @@
+Spanish_Reclamation_Of_The_Lowlands_progress_bar = {
+    name = "Spanish_Reclamation_Of_The_Lowlands_progress_bar"
+    desc = "Spanish_Reclamation_Of_The_Lowlands_progress_bar_desc"
+#   desc = "This progress bar tracks the progress of the Spanish reclamation of the Lowlands."
+
+    default_green = yes
+
+    monthly_progress = {
+        if = {
+			}
+            add = {
+                desc = "spain_progress_bar.1"
+                if = {
+                    limit = {
+                        authority > 100
+                    
+                        value = 1
+				        owner = {
+					        any_scope_state = {
+						        is_incorporated = yes
+						        loyalty >= 0.10
+					        }
+				        }
+                    }
+            is_in_government = ig_armed_forces  
+
+            max_value = 100
+        
+            add_progress = {
+            value = 1  
+            }
+        }
+    }
+    }
+    
+    display = {
+        text = "Current Progress: {current_value} out of {goal_value}."
+    }
+	on_complete = {
+		set_variable = Spanish_Reclamation_Of_The_Lowlands
+	}
+
+    start_value = 0
+	min_value = 0
+	max_value = 100
+}

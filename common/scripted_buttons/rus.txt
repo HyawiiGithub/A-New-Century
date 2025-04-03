@@ -1,0 +1,66 @@
+je_rus_annex  =  {
+    name = "annex_rus"
+	desc = "annex_rus_desc"
+
+    visible = {
+        exists = c:RSF
+		c:RSF = ROOT
+        NOT = { has_variable = clicked_bel }        
+    }
+
+    possible = {
+        owns_entire_state_region = STATE_LUHANSK
+        NOT = { has_variable = clicked_bel }
+        custom_tooltip = {
+            text = said_bin_governor-General_Stanislaw_Dovnar-Zapolsky_dies
+			    ruler = {
+				    NOT = { has_variable = is_said_bin_sultan }
+			    }
+			    has_law = law_type:law_presidential_republic    
+        }
+    }
+
+    effect = {
+        annex = c:BYL
+        s:STATE_ESTONIA = {
+            add_claim = ROOT
+        }
+        s:STATE_REZEKNE = {
+            add_claim = ROOT
+        }
+        s:STATE_TARTU = {
+            add_claim = ROOT
+        }
+        s:STATE_PARNU = {
+            add_claim = ROOT
+        }
+        s:STATE_SAAREHIIU = {
+            add_claim = ROOT
+        }
+        s:STATE_LATVIA = {
+            add_claim = ROOT
+        }
+        s:STATE_KURZEME = {
+            add_claim = ROOT
+        }
+        s:STATE_VILNIUS = {
+            add_claim = ROOT
+        }
+        s:STATE_LITHUANIA = {
+            add_claim = ROOT
+        }
+        s:STATE_SIAULIAI = {
+            add_claim = ROOT
+        }
+        s:STATE_KRALOVEC = {
+            add_claim = ROOT
+        }
+        s:STATE_BIALYSTOK =  {
+            add_claim = ROOT
+        }
+        set_variable = clicked_bel
+    }
+
+    cooldown = 100 
+    ai_chance = 25   
+}
