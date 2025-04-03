@@ -1,0 +1,30 @@
+namespace = china
+
+china.1 = {
+    type = country_event
+	placement = ROOT
+
+    title = china.1.t
+    description = china.1.d
+    flavor = china.1.f
+
+    event_image = {
+		video = "unspecific_politicians_arguing"
+ }
+
+ on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_map.dds"
+    
+    duration = 3
+
+    option = {
+    name = china.1.a
+    add_modifier = {
+    name = bureaucracy_fixed
+        }
+        add_loyalists = {
+            value = 0.01
+            }
+        }
+    }   

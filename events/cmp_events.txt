@@ -1,0 +1,33 @@
+namespace = cmp_not_the_mining_renaissance
+
+
+cmp_not_the_mining_renaissance.1 = {
+    type = country_event
+	placement = ROOT
+
+    title = cmp_not_the_mining_renaissance.1.t
+    description = cmp_not_the_mining_renaissance.1.d
+    flavor = cmp_not_the_mining_renaissance.1.f
+
+    event_image = {
+		video = "europenorthamerica_capitalists_meeting"
+ }
+
+ on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_map.dds"
+    
+    duration = 3
+
+    option = {
+        name = cmp_not_the_mining_renaissance.1.a
+        add_modifier = { 
+        name = cmp_the_renaissance_of_mining_industry
+        is_decaying = yes
+        months = 36
+        }
+        add_loyalists = {
+            value = 0.03
+        }
+    }
+}
