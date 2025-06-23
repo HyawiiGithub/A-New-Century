@@ -1,7 +1,0 @@
-﻿l_english:
-  ## GDP
-  CWP_NORMAL: "[Country.MakeScope.ScriptValue('fake_gdp')|1*v]"
-  CWP_NORMAL2: "[Country.MakeScope.ScriptValue('fake_gdp_2')|1*v]"
-  CWP_TRILLION: "[Country.MakeScope.ScriptValue('gdp_trillion')|1*v]T"
-  CWP_STATE: "@money![State.MakeScope.ScriptValue('state_gdp')|1*vK]"
-  CWP_STATE_2: "@money![State.MakeScope.ScriptValue('state_gdp_2')|1*vK]"
