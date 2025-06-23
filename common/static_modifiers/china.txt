@@ -1,5 +1,0 @@
-bureaucracy_fixed = {
-    icon  = "gfx/interface/icons/event_icons/event_map.dds"
-    country_prestige_mult = 0.05
-    building_government_administration_throughput_add = 0.1
-}

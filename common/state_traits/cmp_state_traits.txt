@@ -1,6 +1,0 @@
-state_trait_automobile_stonks = {
-    building_motor_industry_throughput_add = 0.33 # NOT USED
-    state_construction_mult = 0.25
-    add_loyalists  = 0.25
-    building_group_bg_construction_laborers_mortality_mult = -0.4
-}
